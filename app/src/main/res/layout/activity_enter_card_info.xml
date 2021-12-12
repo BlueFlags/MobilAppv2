@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterCardInfo">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ui1"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/CardNumber"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="300dp"
+                android:hint="Card Number" />
+
+            <EditText
+                android:id="@+id/ExpiryDate"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CardNumber"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:hint="Expiry Date" />
+
+            <EditText
+                android:id="@+id/CVV"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ExpiryDate"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:hint="CVV" />
+
+
+            <Button
+                android:id="@+id/entercard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CVV"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:onClick="entercard"
+                android:text="Add Card" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
