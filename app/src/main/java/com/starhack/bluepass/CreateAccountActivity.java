@@ -14,7 +14,8 @@ public class CreateAccountActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_account);
     }
     public void createaccount(View view) {
-        Intent intent = new Intent(CreateAccountActivity.this, AddCarActivity.class);
+        Intent intent = new Intent(getApplicationContext(), AddCarActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 }

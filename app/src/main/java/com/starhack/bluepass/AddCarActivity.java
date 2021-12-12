@@ -25,7 +25,8 @@ public class AddCarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_car);
     }
     public void addcar(View view) {
-        Intent intent = new Intent(AddCarActivity.this, EnterCardInfo.class);
+        Intent intent = new Intent(getApplicationContext(), EnterCardInfo.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 }

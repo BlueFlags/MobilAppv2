@@ -15,7 +15,8 @@ public class EnterCardInfo extends AppCompatActivity {
     }
 
     public void entercard(View view) {
-        Intent intent = new Intent(EnterCardInfo.this, PaymentActivity.class);
+        Intent intent = new Intent(getApplicationContext(), PaymentActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 }

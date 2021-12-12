@@ -17,7 +17,13 @@ public class PaymentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_payment);
 
     }
-public void dopayment(View view){
-    Toast.makeText(this,"Payment Successful!" , Calendar.LONG).show();
-}
+
+    public void dopayment(View view) {
+        Toast.makeText(this, "Payment Successful!", Calendar.LONG).show();
+    }
+
+    public void rejectpayment(View view) {
+        Toast.makeText(this, "Payment Denied!", Calendar.LONG).show();
+        finishActivity(0);
+    }
 }

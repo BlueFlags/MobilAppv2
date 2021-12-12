@@ -28,7 +28,8 @@ public class LoginActivity extends AppCompatActivity {
         Toast.makeText(this,username, Calendar.LONG).show();
     }
     public void signup(View view) {
-        Intent intent = new Intent(LoginActivity.this, CreateAccountActivity.class);
+        Intent intent = new Intent(getApplicationContext(), CreateAccountActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
     private class LongOperation extends AsyncTask<String, Void, String> {
@@ -43,7 +44,8 @@ public class LoginActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result) {
-            Intent intent = new Intent(LoginActivity.this, AddCarActivity.class);
+            Intent intent = new Intent(getApplicationContext(), AddCarActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }
 

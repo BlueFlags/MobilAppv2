@@ -7,7 +7,7 @@
     tools:context=".AddCarActivity">
 
     <LinearLayout
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,11 +25,23 @@
                 android:id="@+id/PINNumber"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/textView"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="false"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="10dp"
                 android:hint="PIN Number" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="20dp"
+                android:text="McDonalds Pending Payment 30TL"
+                android:textSize="20sp" />
 
 
             <Button
@@ -40,8 +52,19 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="50dp"
-                android:onClick="dopayment"
+                android:onClick="dopayment "
                 android:text="Confirm Payment" />
+            <Button
+                android:id="@+id/rejectpayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/confirmpayment"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:onClick="rejectpayment "
+                android:text="Reject Payment" />
+
 
 
         </RelativeLayout>
