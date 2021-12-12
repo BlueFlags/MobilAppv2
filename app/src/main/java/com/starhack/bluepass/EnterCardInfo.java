@@ -4,7 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import java.util.Calendar;
 
 public class EnterCardInfo extends AppCompatActivity {
 
@@ -15,8 +20,12 @@ public class EnterCardInfo extends AppCompatActivity {
     }
 
     public void entercard(View view) {
+        Toast.makeText(this, "Card Added Successful!", Calendar.LONG).show();
         Intent intent = new Intent(getApplicationContext(), PaymentActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
+
+
+
 }

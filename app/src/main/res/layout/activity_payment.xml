@@ -30,7 +30,10 @@
                 android:layout_centerVertical="false"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:hint="PIN Number" />
+                android:hint="PIN Number"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
 
             <TextView
                 android:id="@+id/textView"
@@ -41,6 +44,8 @@
                 android:layout_marginTop="150dp"
                 android:layout_marginBottom="20dp"
                 android:text="McDonalds Pending Payment 30TL"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
                 android:textSize="20sp" />
 
 
@@ -52,7 +57,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="50dp"
-                android:onClick="dopayment "
+                android:onClick="dopayment"
                 android:text="Confirm Payment" />
             <Button
                 android:id="@+id/rejectpayment"
@@ -62,7 +67,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="50dp"
-                android:onClick="rejectpayment "
+                android:onClick="rejectpayment"
                 android:text="Reject Payment" />
 
 

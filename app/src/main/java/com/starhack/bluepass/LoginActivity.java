@@ -20,12 +20,13 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void login(View view){
+        Toast.makeText(this, "Login Successful!", Calendar.LONG).show();
         EditText txt = (EditText) findViewById(R.id.username);
         String username = txt.getText().toString();
         LongOperation longOperation=new LongOperation();
         longOperation.execute();
 
-        Toast.makeText(this,username, Calendar.LONG).show();
+
     }
     public void signup(View view) {
         Intent intent = new Intent(getApplicationContext(), CreateAccountActivity.class);

@@ -24,6 +24,6 @@ public class PaymentActivity extends AppCompatActivity {
 
     public void rejectpayment(View view) {
         Toast.makeText(this, "Payment Denied!", Calendar.LONG).show();
-        finishActivity(0);
+
     }
 }
